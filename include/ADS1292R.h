@@ -24,9 +24,9 @@
 #define CONFIG_SPI_MASTER_DUMMY   0xFF
 
 // Register Read Commands
-#define RREG  0x20;		//Read n nnnn registers starting at address r rrrr
+#define RREG  0x20		//Read n nnnn registers starting at address r rrrr
                       //first byte 001r rrrr (2xh)(2) - second byte 000n nnnn(2)
-#define WREG  0x40;	  //Write n nnnn registers starting at address r rrrr
+#define WREG  0x40	  //Write n nnnn registers starting at address r rrrr
                       //first byte 010r rrrr (2xh)(2) - second byte 000n nnnn(2)
 #define START	0x08		//Start/restart (synchronize) conversions
 #define STOP	0x0A		//Stop conversion
