@@ -29,7 +29,7 @@ void readADS1292R_ID();
 void setup() {
   delay(2000);
 
-  Serial.begin(57600);
+  Serial.begin(115200);
   while (!Serial); 
   spi->begin(SPI_SCK, SPI_MISO, SPI_MOSI, SPI_CS);
 
